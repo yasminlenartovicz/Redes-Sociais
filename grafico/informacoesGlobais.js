@@ -4,9 +4,9 @@ async function visualizarInformacoesGlobais() {
     const dados = await res.json()
     const paragrafo = document.createElement('p')
     paragrafo.classList.add('graficos-container__texto')
-    paragrafo.innerHTML = `Você sabia que o mundo tem <span> ${dados.total_pessoas_mundo} </span> de pessoas e que aproximadamente <span> ${dados.total_pesoas_conectadas} </span> estão conectadas em alguma Rede Social e passa em media <span> ${dados.tempo_medio} </span> horas conectadas.`
+    paragrafo.innerHTML = `Você sabia que o mundo tem <span> ${dados.total_pessoas_mundo} </span> de Pessoas, e que aproximadamente <span> ${dados.total_pessoas_conectadas} </span> estão conectadas em alguma Rede Social e passam em média <span> ${dados.tempo_medio} </span> Horas Conectadas.`
     const container = document.getElementById('graficos-container')
     container.appendChild(paragrafo)
-     console.log(paragrafo);
+    console.log(paragrafo);
 }
 visualizarInformacoesGlobais()
